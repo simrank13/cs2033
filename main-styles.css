@@ -1,0 +1,475 @@
+body {
+    
+    //background-image: url('../img/tiles.png');
+    background-color: rgb(192, 166, 175);
+    margin:0;
+    background-repeat: repeat;
+    background-size: 400px 400px;
+}
+
+.wrapper {
+    width:800;
+    margin:auto;
+}
+
+.desc {
+    font-size: 17px;
+}
+
+
+.box {
+    display:inline-block;
+    vertical-align: top;
+    border-radius: 8px; 
+}
+
+section {
+    margin-bottom:50px;
+}
+
+.sect-hairclipimg {
+    width:180px;
+}
+
+.sect-jeanimg {
+    width:px;
+}
+
+.sect-dressimg {
+    width:177px;
+}
+
+.sect-sunglassimg {
+    width:178px;
+}
+
+.menu-group {
+    font-size:22px;
+    width:450px;
+    margin-left:10px;
+}
+.banner {
+    text-align: center;
+}
+.banner img {
+    width: 100%; /* Makes the image stretch horizontally within its container */
+    height: auto; /* Maintains the aspect ratio */
+    max-height: 25%; /* Reduces the height to half */
+    object-fit: cover; /* Ensures the image scales proportionally while covering the area */
+    display: block; /* Fixes any alignment issues */
+    margin: 0 auto; /* Centers the image horizontally */
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers the entire row of images horizontally */
+    flex-wrap: nowrap; /* Prevents the images from wrapping onto a new line */
+    gap: 20px; /* Adds consistent spacing between the images */
+    margin: 20px auto; /* Centers the container and adds vertical spacing */
+    overflow-x: auto; /* Enables horizontal scrolling if necessary */
+    max-width: 100%; /* Ensures the container spans the full width if needed */
+}
+
+.image-container .box {
+    display: flex; /* Ensures Flexbox applies to the image and caption */
+    flex-direction: column; /* Stacks the image and caption vertically */
+    align-items: center; /* Centers content inside each box */
+    justify-content: flex-start; /* Aligns items at the top of the box */
+    width: 200px; /* Sets a fixed width for the box */
+    height: auto; /* Allows the height to adjust based on content */
+}
+
+.image-container .box img {
+    width: 100%; /* Ensures the image fills the box width */
+    height: 250px; /* Sets a fixed height for consistency */
+    object-fit: cover; /* Crops the image proportionally */
+    border-radius: 8px; /* Adds rounded corners for styling */
+}
+
+
+
+ul {
+    list-style-type:square;
+}
+
+ul.nav {
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+    display: flex; /* Use flexbox to align items in one row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+ul.nav li {
+    background-color: rgba(19, 25, 14, 0.502);
+    color: white;
+    font-size: 28px;
+    list-style: none;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0; /* Remove extra margin */
+    transition: all 0.3s ease-in-out;
+}
+
+ul.nav a {
+    text-decoration: none;
+    font-family: 'Bahnschrift', cursive;
+}
+
+ul.nav li:hover {
+    background-color: rgba(137, 100, 100, 0.5); /* Background color on hover */
+    color: black; /* Text color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#navsect {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding-top:0;
+    z-index:999;
+}
+
+h1 {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size:40px;
+}
+
+p {
+    font-family: 'Bahnschrift Light', cursive;
+    font-size:20px;
+}
+
+.name0 {
+    font-family: 'Bahnschrift', cursive;
+    font-size: 20px;
+
+}
+
+.name1 {
+    font-family: 'Bahnschrift', cursive;
+    color:rgba(19, 36, 5, 0.893);
+    font-size: 20px;
+
+}
+
+.name2 {
+    font-family: 'Bahnschrift Light', cursive; 
+    background-color: rgb(215, 195, 213);
+    font-size: 14px; 
+    border-radius: 14px; 
+    padding: 10px 14px; 
+    margin: 5px auto; 
+    color:rgba(120, 56, 108, 0.893);
+}
+
+.name3 {
+    font-family: 'Bahnschrift', cursive;
+    font-size: 17px;
+
+}
+
+.name4 {
+    font-family: 'Bahnschrift', cursive;
+    color:rgba(19, 36, 5, 0.893);
+    font-size: 18px;
+
+}
+
+.contactSection {
+    padding: 30px;
+}
+
+input, textarea {
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px rgb(192, 166, 175);
+    display: block;
+    font-family: Arial;
+    font-size: 14px;
+    transition: all .5s;
+    border-radius: 8px;
+}
+
+input:focus, textarea:focus {
+    border: solid 1px blue;
+    margin-left:20px;
+    border-radius: 8px;
+}
+
+/* General input and textarea styling */
+input, textarea, select {
+    width: 100%; /* Ensure all fields are the same width */
+    max-width: 450px; /* Optional: Limit the maximum width for all fields */
+    padding: 10px; /* Add internal spacing */
+    margin: 10px 0; /* Add spacing between fields */
+    font-size: 16px; /* Set font size */
+    font-family: Arial, sans-serif; /* Clean font */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    margin-bottom: 10px;
+}
+
+/* Dropdown menu styling */
+select {
+    cursor: pointer; /* Add a pointer cursor for dropdowns */
+    appearance: none; /* Remove default browser styling */
+    background-color: white; /* Ensure background matches other inputs */
+}
+
+/* Styling for focused fields */
+input:focus, textarea:focus, select:focus {
+    border-color: #190bdd; /* Green border on focus */
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0px 0px 4px rgba(76, 175, 80, 0.6); /* Add a green glow */
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: none; /* Prevent resizing */
+    height: 100px; /* Set fixed height */
+}
+
+
+.add-to-cart {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Adds rounded corners */
+    padding: 10px 20px; /* Adds spacing inside the button */
+    font-size: 16px; /* Adjusts text size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin-top: 10px; /* Adds space above the button */
+    text-align: center; /* Centers text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease , transform 0.2s ease; /* Adds hover effect transition */
+   
+}
+
+.add-to-cart:hover {
+    background-color: #367d39; /* Darker green on hover */
+    transform: translateY(-2px); 
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style for the Send button */
+.send-button {
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    padding: 12px 20px; /* Adjust padding for size */
+    font-size: 16px; /* Text size */
+    color: white; /* White text */
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.send-button:hover {
+    background-color: #367d39; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift the button slightly */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active effect */
+.send-button:active {
+    background-color: #2b632d; /* Even darker green when clicked */
+    transform: translateY(1px); /* Push the button down */
+}
+
+
+.product-container {
+    text-align: center; /* Centers the button and product text */
+    margin: 20px; /* Adds spacing around the product section */
+}
+
+
+#backToTop {
+    position: fixed; /* Stays in place when scrolling */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    width: 50px; /* Button size */
+    height: 50px; /* Button size */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White arrow */
+    font-size: 24px; /* Arrow size */
+    text-align: center; /* Center the arrow */
+    line-height: 50px; /* Vertically align the arrow */
+    border-radius: 50%; /* Make the button circular */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevents interaction when not visible */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+/* Show the button when scrolled down */
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hover effect */
+#backToTop:hover {
+    background-color: #367d39; /* Darker green on hover */
+    transition: all 0.3s ease-in-out;
+}
+
+.summary {
+    background-color: rgba(215, 195, 213, 0.458);
+    font-size: 20px; 
+    border-radius: 14px; 
+    padding: 10px 14px; 
+    margin: 5px auto; 
+}
+
+.parallax-img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    background-image: 'img/parallaxeffect.jpg';
+    background-size: cover;
+    background-attachment: fixed; /* Fixed background for parallax */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.sticky-message {
+    position: fixed;
+    top: 20%; /* Adjust the vertical position */
+    left: 0; /* Stick to the left */
+    width: 150px; /* Set width */
+    height: 150px; /* Set height to match width for a square */
+    background-color: rgba(215, 195, 213, 0.395); /* Slightly transparent background */
+    padding: 10px; /* Space inside the square */
+    border: 1px solid rgba(215, 195, 213, 0.395); /* Add border */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    font-family: 'Bahnschrift', cursive;
+    font-size: 20px; /* Adjust font size for square space */
+    color: #333;
+    z-index: 1000; /* Ensure it stays above other content */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Use Flexbox for vertical and horizontal centering */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    overflow: hidden; /* Prevent text overflow */
+}
+.animationSection {
+    background-color: auto;
+}
+
+/* Animation Section */
+.dressBox {
+    position: relative;
+    width: 700px; /* Adjust based on desired area */
+    height: 200px; /* Adjust based on desired area */
+    margin: auto;
+    background-color: rgba(192, 166, 175, 0.2) /* Optional: Background for visibility */
+}
+
+.dressPiece {
+    background-image: url('../img/pinkdress.png'); /* Correct relative path */
+    width: 320px; /* Adjust based on your dress image */
+    height: 320px; /* Ensure this matches the height of the full dress */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-size: contain; /* Ensure the image scales proportionally */
+    background-repeat: no-repeat;
+}
+
+
+@keyframes moveDress {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 600px; /* Move horizontally */
+    }
+}
+
+#dress {
+    animation: moveDress 3s infinite linear alternate;
+}
+
+.parallax-container {
+    position: relative;
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden; /* Ensure no overflow issues */
+}
+
+
+.parallax-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/parallaxeffect.jpg');
+    background-size: cover; /* Ensures the image fills the container */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Enables the parallax effect */
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .parallax-img {
+        background-attachment: scroll; /* Disable fixed for mobile */
+    }
+}
+.layer1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#parallaxContainer {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#stiletto-container {
+    height: 500px; /* Adjust to your needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stiletto {
+    width: 200px;
+    height: auto;
+    transform: scale(1); /* Initial scale */
+    transition: transform 0.5s ease; /* Smooth scaling transition */
+}
+
+.footer-section {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 10vh; /* Adjust as needed to ensure enough vertical space */
+    text-align: center; /* Centers text within the box */
+}
+
+.footer-section .box {
+    
+    font-size: 15px;
+}
+
