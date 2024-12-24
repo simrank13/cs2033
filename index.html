@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <!-- Linking the main stylesheet for page styling -->
+        <link rel="stylesheet" href="css/main-styles.css">
+        
+        <!-- Setting the page title -->
+        <title>Couture Closet </title>
+
+        <!-- Adding a favicon for the website -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/xicon">
+        
+        <!-- Including ScrollMagic and GSAP libraries for animations -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+        
+        <!-- Linking the main JavaScript file -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+<body onscroll="scroll();"> <!-- Triggering a scroll event listener -->
+
+    <div class="wrapper"> <!-- Main container for the page content -->
+
+        <!-- A fixed message container -->
+        <div id="dayMessage" class="sticky-message"></div>
+
+        <!-- Banner Section -->
+        <section>
+            <div class="box banner"><img src="img/banner.jpg" title="banner" alt="banner"/></div>
+        </section>
+
+        <!-- Navigation Bar -->
+        <section id="navsect">
+            <ul class="nav">
+                <!-- Navigation links to sections of the page -->
+                <a href="#about"><li class="box">About</li></a>
+                <a href="#products"><li class="box">Products</li></a>
+                <a href="#contact"><li class="box">Contact</li></a>
+                <a href="#references"><li class="box">References</li></a>
+            </ul>
+        </section>  
+
+       <!-- About Section -->
+        <a name="about"></a>
+            <section>   
+                <h1>About Us</h1> <!-- Description of the brand -->
+                <p class="summary"> Couture Closet is all about helping you express yourself through fashion. We offer a blend of stylish, high-quality clothing and accessories that are perfect for everyday wear or making a fashion statement. Our focus is on creating pieces that feel unique and timeless while being mindful of sustainability. At Couture Closet, we believe your wardrobe should tell a story, and we're here to make that happen!</p>
+                <p>&nbsp;</p>
+                <!-- Gallery of images -->
+                <div class="image-container">
+                    
+                    <div class="box">
+                        <img src="img/jeans.jpg" class="sect-jeanimg" title="pants" alt="pants" />
+                    </div>
+                    <div class="box">
+                        <img src="img/sunglasses.jpg" class="sect-sunglassimg" title="sunglasses" alt="sunglasses" />
+                    </div>
+                    <div class="box">
+                        <img src="img/dresses.jpg" class="sect-dressimg" title="dresses" alt="dresses" />
+                    </div>
+                </div>
+                
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <!-- Team Members -->
+                <div class="image-container">
+                    <div class="box">
+                        <img src="img/aria.jpg" class="sect-hairclipimg" title="Aria Montgomery" alt="Aria Montgomery" />
+                        <p class="name0">Aria Montgomery</p> <!-- Name -->
+                        <p class="name1">Head of Operations</p> <!-- Title -->
+                        <p class="name2">Aria is the strategic innovator behind Couture Closet's smooth operations. As the Head of Operations, she is concerned with supply chains, managing budgets, and driving the commitment of the brand to sustainability. With a detail-oriented approach and skilled in problem-solving and decision making, Aria ensures that every department operates with complete efficiency, making Couture Closet a leader and at the top in ethical and sustainable fashion.</p> <!-- Description -->
+                    </div>
+                    <div class="box">
+                        <img src="img/spencer.jpg" class="sect-jeanimg" title="Spencer Hastings" alt="Spencer Hastings" />
+                        <p class="name0">Spencer Hastings</p>
+                        <p class="name1">Engagement Director</p>
+                        <p class="name2">Spencer serves as the Director of Client Engagement at Couture Closet, building meaningful connections with clients and partners. With expertise in fashion advising and event coordination, they create unforgettable shopping experiences that bring the brand to life. From managing collaborations to engaging the community through social media, Spencer ensures that Couture Closet remains synonymous with elegance and offers customer-centric service. </p>
+                        
+
+                    </div>
+                    <div class="box">
+                        <img src="img/lily.jpg" class="sect-sunglassimg" title="Lily Van Der Woodson" alt="Lily Van Der Woodson" />
+                        <p class="name0">Lily Van Der Woodson</p>
+                        <p class="name1">Creative Director</p>
+                        <p class="name2">As the Creative Director of Couture Closet, Lily leads the charge in shaping the brand's unique and innovate designs. With a background in fashion and a passion for artistic expression, she transforms bold ideas into trendsetting collections. Mixing modern with timelessness, Known for blending modern styles with timeless elegance, Lily fuses pieces together into items that showcase individuality and empowers customers to express themselves through fashion.</p>
+                    </div>
+                </div>
+                
+               
+            </section>
+            <!-- Parallax Image -->
+            <div class="parallax-container">
+                <div class="parallax-img"></div>
+            </div>
+            <!-- Products Section -->
+            <a name="products"></a>
+            <section>
+                <h1>Products</h1>
+                <div class="image-container">
+                    <!-- Product Cards -->
+                    <div class="box">
+                        <img src="img/hoodie.jpg" class="sect-sunglassimg" title="Orange Hoodie" alt="Orange Hoodie" />
+                        <p class="name3">Vibrant Urban Hoodie - Orange Edition</p>
+                        <p class="name4">VUHOE476</p>
+                        <p class="name2">Make a bold statement with this vibrant orange hoodie with graffiti-inspired text embodying urban streetwear culture. Crafted from soft, breathable fabric, it offers comfort and durability for everyday wear. With its relaxed fit, it is perfect for layering or casual lounging. </p>
+                        <button class="add-to-cart">Add to Cart</button> <!-- Add to Cart Button -->
+                    </div>
+
+                    <div class="box">
+                        <img src="img/vest.jpg" class="sect-sunglassimg" title="Denim Vest" alt="Denim Vest" />
+                        <p class="name3">Floral Embroidered Denim Vest</p>
+                        <p class="name4">VFEDV961</p>
+                        <p class="name2">This denim vest features vibrant floral embroidery, adding a playful yet stylish touch. Perfect for layering over casual outfits, it combines classic denim with modern flair. Its structured fit and button-down design make it effortlessly versatile.  </p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="box">
+                        <img src="img/skirt.jpg" class="sect-sunglassimg" title="Blue Skirt" alt="Blue Skirt" />
+                        <p class="name3">Classic Navy Pinstripe Skirt</p>
+                        <p class="name4">CNPSQ805</p>
+                        <p class="name2">This timeless navy pinstripe skirt features a flattering A-line silhouette and clean lines, crafted from high-quality fabric. It offers both comfort and sophistication, perfect for work or casual outings. Pair it with blouses or sweaters for an effortlessly chic look.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="box">
+                        <img src="img/mocktop.jpg" class="sect-sunglassimg" title="Mock Top" alt="Mock Top" />
+                        <p class="name3">Mock Neck Top - White Edition</p>
+                        <p class="name4">MNTWE732</p>
+                        <p class="name2">This sophisticated white mock neck top features a minimalist design and stylish cutout detail, perfect for both workwear and casual settings. Its lightweight fabric ensures comfort and elegance. Pair it with tailored trousers for a timeless, polished look. </p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Animation Section -->
+            <section class='animationSection'>
+                <div class='dressBox'>
+                    <div class='dressPiece' id='dress'></div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <a name="contact"></a>
+            <section class='contactSection'>
+                <h1>Contact</h1>
+                <form method='post'>
+                    
+                    <input type="text" id="name" placeholder="Name" onblur="validateName()"/>
+                    
+                    <input type="text" id="phone" placeholder="Phone Number" onblur="validatePhoneNumber()"/>
+                    
+                    <select id="reasonDropdown" onchange="toggleProductID()">
+                        <option value="" disabled selected>Reason for message</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="pricing">Pricing</option>
+                        <option value="product-info">Product Info</option>
+                        <option value="shipping">Shipping</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <div id="productIDContainer" style="display: none;">
+                        <input type="text" id="productID" placeholder="Product ID" onblur="validateProductID()" />
+                    </div>
+                    
+                    <textarea id="message" placeholder="Message" onblur="validateMessage()"></textarea>
+
+                    <div class="send-button">
+                        Send
+                    </div>
+                    
+                </form>
+            
+            </section>
+            <!-- Back to Top Button -->
+            <div id="backToTop" onclick="scrollToTop()">↑</div>
+
+
+            <!-- References Section -->
+            <a name="references"></a>
+            <section>
+                <!-- References with clickable links -->
+                <h1>References</h1>
+                <p class="desc">A vibrant display of various clothes hanging on a rack, showcasing a mix of styles, colors, and fabrics.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/clothes-hanging-on-a-clothes-rack-8030175/" target="_blank">https://www.pexels.com/photo/clothes-hanging-on-a-clothes-rack-8030175/</a></p>
+                <p class="desc">A stylish portrait of a woman wearing sunglasses and a beaded necklace, exuding confidence and sophistication.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/woman-in-sunglasses-with-beaded-necklace-3387577/" target="_blank">https://www.pexels.com/photo/woman-in-sunglasses-with-beaded-necklace-3387577/</a></p>
+                <p class="desc">A serene shot of a woman in a flowing sundress standing on a tranquil beach, capturing a carefree and relaxed vibe.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/woman-in-sundress-standing-on-sea-shore-14749667/" target="_blank">https://www.pexels.com/photo/woman-in-sundress-standing-on-sea-shore-14749667/</a></p>
+                <p class="desc">A professional image of a woman standing in an office setting with her arms crossed, exuding authority and confidence.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/a-woman-standing-in-an-office-with-her-arms-crossed-23496706/" target="_blank">https://www.pexels.com/photo/a-woman-standing-in-an-office-with-her-arms-crossed-23496706/</a></p>
+                <p class="desc">A close-up portrait of a young woman wearing glasses, radiating confidence and poise.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/confident-young-woman-in-glasses-portrait-28570314/" target="_blank">https://www.pexels.com/photo/confident-young-woman-in-glasses-portrait-28570314/</a></p>
+                <p class="desc">A candid and natural shot of a woman with brown hair, presenting a casual and approachable demeanor.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/a-woman-with-brown-hair-8727530/" target="_blank">https://www.pexels.com/photo/a-woman-with-brown-hair-8727530/</a></p>
+                <p class="desc">A vibrant image of a man standing on a sidewalk wearing a bright orange hoodie, epitomizing urban street style.</p>
+                <p class="name2"><a href="https://unsplash.com/photos/a-man-in-an-orange-hoodie-standing-on-a-sidewalk-j6OylwETq4o/" target="_blank">https://unsplash.com/photos/a-man-in-an-orange-hoodie-standing-on-a-sidewalk-j6OylwETq4o/</a></p>
+                <p class="desc">A chic shot of a woman wearing a denim vest adorned with floral embroidery, blending classic and modern fashion.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/woman-in-denim-vest-with-floral-pattern-16487052/" target="_blank">https://www.pexels.com/photo/woman-in-denim-vest-with-floral-pattern-16487052/</a></p>
+                <p class="desc">A minimalist image of a model wearing a sweater and pants, showcasing understated yet stylish clothing.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/model-in-sweater-and-pants-27946746/" target="_blank">https://www.pexels.com/photo/model-in-sweater-and-pants-27946746/</a></p>
+                <p class="desc">A graceful photo of a woman in a long-sleeved top and a flowing skirt, exuding timeless elegance.</p>
+                <p class="name2"><a href="https://www.pexels.com/photo/photo-of-woman-wearing-long-sleeved-top-and-long-skirt-1007017/" target="_blank">https://www.pexels.com/photo/photo-of-woman-wearing-long-sleeved-top-and-long-skirt-1007017/</a></p>
+                <p class="desc">An animated dress</p>
+                <p class="name2"><a href="https://pixabay.com/illustrations/fashion-clothes-design-482099/" target="_blank">https://pixabay.com/illustrations/fashion-clothes-design-482099/</a></p>
+                <p class="desc">A utility for generating favicons for websites, offering customizable options for creating unique icons.</p>
+                <p class="name2"><a href="https://pixabay.com/vectors/stiletto-shoe-lady-female-fashion-312610/" target="_blank">https://pixabay.com/vectors/stiletto-shoe-lady-female-fashion-312610/</a></p>
+                <p class="desc">A utility for generating favicons for websites, offering customizable options for creating unique icons.</p>
+                <p class="name2"><a href="https://favicon.io/favicon-generator/" target="_blank">https://favicon.io/favicon-generator/</a></p>
+                
+            </section>
+
+            <!-- Stiletto Animation -->
+            <div id="stiletto-container">
+                <img src="img/stiletto.png" id="stiletto" title="stiletto" alt="stiletto"/>
+            </div>
+
+            <!-- Footer -->
+            <p>&nbsp;</p>
+            <section class="footer-section">
+                <div class="box"><h3>Couture Closet &copy; 2024</h3></div>
+            </section>
+            
+
+        </div>
+    </body>
+</html>
